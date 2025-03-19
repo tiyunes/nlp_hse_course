@@ -1,4 +1,14 @@
 
+## Results on the test data:
+
+| model                                | public f1-score on kaggle test dataset |
+|--------------------------------------|----------------------------------|
+| logistic regression (TF-IDF)         | 0.78945                          |
+| LSTM (bidirectional, trained from scratch)    | 0.76248                          |
+| Transformer (trained from scratch)   | 0.71897                          |
+| DistilBERT (fine-tuned)              | 0.82224                          |
+
+
 
 ## Conclusions:
 
