@@ -1,3 +1,13 @@
+## 1st task (TF-IDF, BoW models)
+* notebook with descriptions models/hw1_n1_tdidf_bow.ipynb
+
+## 2nd task (LSTM, Transformer)
+
+* notebooks with descriptions models/hw1_n2_lstm.ipynb, models/hw1_n2_transformer.ipynb
+
+### 3rd task (fine-tuned DistillBERT)
+
+* notebook with descriptions models/hw1_n3_finetuned.ipynb
 
 ## Results on the test data:
 
