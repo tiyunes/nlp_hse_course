@@ -16,3 +16,16 @@
 
 * The best model in terms of balance between complexity and quality was the logistic regression model based on TF-IDF vector representations that shows f1 = 0.78945 on the public part of the test dataset but requires much less amount of parameters
 
+- **How can the achieved results be improved?**
+  
+  * more extensive hyperparameter tuning for neural networks models trained from scratch
+    
+  * exploring ensemble models
+  * utilizing transfer learning from models trained on similar domains
+  * fine-tuning with advanced optimization techniques
+- **What difficulties were met?**
+  
+  * training deep models from scratch required substantial computational resources
+
+  * diverse preprocessing variations were significant challenge
+
