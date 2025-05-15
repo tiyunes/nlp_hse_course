@@ -15,6 +15,7 @@ Results of the 3-gram model:
 |--------------------------------------|----------------------------------|----------------------------------|
 | 3-gram model        | 8206.71                          | 9853.56                         |
 
+* notebook: notebooks/hw2_nlp_ngram.ipynb
 # LSTM model
 
 I've conducted several experiments with LSTM model.
@@ -25,7 +26,7 @@ Results of the best LSTM model:
 |--------------------------------------|----------------------------------|----------------------------------|
 | LSTM        | 11578.11                          | 21359.99                         |
 
-
+* notebook: notebooks/hw2_nlp_lstm.ipynb
 # Fine-tuned model
 
 For fine-tuning I've used DistilGPT2, a 6-layer decoder-only Transformer distilled from GPT-2 small, with 768-dimensional hidden states, 12 self-attention heads per layer, and a causal masking setup. It was originally pretrained on the OpenWebText corpus under the supervision of GPT-2 model, yielding approximately 82 million trainable parameters. 
@@ -35,7 +36,7 @@ Results of the fine-tuned model:
 |--------------------------------------|----------------------------------|----------------------------------|
 | fine-tuned model        | 240.92                          | 6545.1                         |
 
-
+* notebook: notebooks/hw2_nlp_finetuning.ipynb
 # Conclusion 
 
 * The best model in terms of quality was the fine-tuned DistilGPT2, achieving an average perplexity of 241 on correct phrases but it’s also the largest model with approx. 82 million trainable parameters.
