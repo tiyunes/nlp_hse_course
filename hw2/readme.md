@@ -17,8 +17,8 @@ Results of the 3-gram model:
 
 # LSTM model
 
-I've conducted several experiments with LSTM model
-The best setting was LSTM with encoder-decoder-like architecture with approximately 8 millions of trainable parameters
+I've conducted several experiments with LSTM model.
+The best setting was LSTM with encoder-decoder-like architecture with approximately 8 millions of trainable parameters. The encoder–decoder LSTM uses 128 token embedding size and 128 hidden state dimension. Both the encoder and decoder are single‐layer LSTMs: the encoder is bidirectional and the decoder is a unidirectional 128-hidden LSTM. 
 
 Results of the best LSTM model:
 | model                                | average perplexity on correct examples|  average perplexity on incorrect examples|
@@ -27,3 +27,11 @@ Results of the best LSTM model:
 
 
 # Fine-tuned model
+
+For fine-tuning I've used DistilGPT2, a 6-layer decoder-only Transformer distilled from GPT-2 small, with 768-dimensional hidden states, 12 self-attention heads per layer, and a causal masking setup. It was originally pretrained on the OpenWebText corpus under the supervision of GPT-2 model, yielding approximately 82 million trainable parameters. 
+
+Results of the fine-tuned model:
+| model                                | average perplexity on correct examples|  average perplexity on incorrect examples|
+|--------------------------------------|----------------------------------|----------------------------------|
+| fine-tuned model        | 240.92                          | 6545.1                         |
+
