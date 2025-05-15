@@ -35,3 +35,17 @@ Results of the fine-tuned model:
 |--------------------------------------|----------------------------------|----------------------------------|
 | fine-tuned model        | 240.92                          | 6545.1                         |
 
+
+# Conclusion 
+
+* The best model in terms of quality was the fine-tuned DistilGPT2, achieving an average perplexity of 241 on correct phrases but it’s also the largest model with approx. 82 million trainable parameters.
+
+* The best model in terms of efficiency was the 3-gram baseline: while its perplexity is much higher, it requires minimal memory.
+
+- **How can the achieved results be improved?**
+  - Use adapter/LoRA methods to further fine-tune DistilGPT2 with less compute.
+  - Tune the hyperparameters for LSTM model
+
+- **What difficulties were met?**
+  - The main difficulty was training neural network from scratch as it requires a lot of compute and it is sensitive to learning rate
+
